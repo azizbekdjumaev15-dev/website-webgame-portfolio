@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite-UZ | Сайты/Игры на заказ</title>
+    <!-- Подключаем новейшие иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ПРЕЛОАДЕР -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="hex-spinner"></div>
+            <h3>Загрузка интерфейса...</h3>
+        </div>
+    </div>
+
+    <!-- ФОН -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- ШАПКА -->
+    <header>
+        <div class="logo">WEBSITE<span class="highlight">.UZ</span></div>
+        <div class="nav-wrapper">
+            <nav>
+                <a href="#hero">Главная</a>
+                <a href="#portfolio">Работы</a>
+                <a href="#pricing">Цены</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Связь</a>
+            </nav>
+            <button id="theme-btn" class="theme-btn"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="status-badge"><span class="dot"></span> Принимаю заказы</div>
+            <h1>Разработка <span class="name-highlight">Будущего</span></h1>
+            <h2 class="typing-wrapper">Создаю <span class="typewriter"></span><span class="cursor">|</span></h2>
+            <p>Ваш надежный партнер в мире IT. Веб-сайты, Веб- Игры.</p>
+            <div class="buttons">
+                <a href="#contacts" class="btn btn-primary btn-glow">Начать проект</a>
+                <a href="#portfolio" class="btn btn-outline">Мои кейсы</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- СТАТИСТИКА -->
+    <section class="stats-section glass-panel">
+        <div class="stat-item">
+            <h2 class="counter" data-target="100">0</h2><span>%</span>
+            <p>Успешных сдач</p>
+        </div>
+        <div class="stat-item">
+            <h2 class="counter" data-target="30">0</h2><span>+</span>
+            <p>Проектов</p>
+        </div>
+        <div class="stat-item">
+            <h2 class="counter" data-target="24">0</h2><span>/7</span>
+            <p>На связи</p>
+        </div>
+    </section>
+
+    <!-- ОБО МНЕ + TIMELINE -->
+    <section id="about" class="section">
+        <h2 class="section-title">История Развития</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content glass-panel">
+                    <h3>2023 - Старт</h3>
+                    <p>Изучение основ HTML, CSS, JavaScript. Первые сверстанные макеты.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content glass-panel">
+                    <h3>2024 - Практика</h3>
+                    <p>Разработка игр на JS, создание сложных анимаций и работа с клиентами.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content glass-panel">
+                    <h3>2025 - PRO Уровень</h3>
+                    <p>Фулл-стек разработка, сложные системы, коммерческие заказы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="tech-marquee">
+        <div class="track">
+            <i class="fab fa-html5"></i> HTML5
+            <i class="fab fa-css3-alt"></i> CSS3
+            <i class="fab fa-js"></i> JavaScript
+            <i class="fab fa-react"></i> React
+            <i class="fab fa-node"></i> Node.js
+            <i class="fab fa-figma"></i> Figma
+            <i class="fab fa-telegram"></i> Telegram API
+            <!-- Повтор -->
+            <i class="fab fa-html5"></i> HTML5
+            <i class="fab fa-css3-alt"></i> CSS3
+            <i class="fab fa-js"></i> JavaScript
+            <i class="fab fa-react"></i> React
+        </div>
+    </div>
+
+    <!-- УСЛУГИ -->
+    <section id="services" class="section">
+        <h2 class="section-title">Мои Компетенции</h2>
+        <div class="container">
+            <div class="card tilt-card">
+                <div class="card-icon-bg"><i class="fas fa-code"></i></div>
+                <h3>Сайт под ключ</h3>
+                <p>От дизайна до хостинга. Полностью готовый продукт.</p>
+            </div>
+            <div class="card tilt-card">
+                <div class="card-icon-bg"><i class="fas fa-gamepad"></i></div>
+                <h3>Игровая Индустрия</h3>
+                <p>3D игры для браузеров и мобильных устройств.</p>
+            </div>
+            <div class="card tilt-card">
+                <div class="card-icon-bg"><i class="fas fa-rocket"></i></div>
+                <h3>Оптимизация</h3>
+                <p>Ускорение работы сайта и поднятие в поиске (SEO).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОРТФОЛИО -->
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Галерея Работ</h2>
+        <div class="container">
+            <div class="portfolio-item glass-panel">
+                <div class="portfolio-img p1"><i class="fas fa-store"></i></div>
+                <h3>Shop Online</h3>
+                <p>Интернет-магазин</p>
+            </div>
+            <div class="portfolio-item glass-panel">
+                <div class="portfolio-img p2"><i class="fas fa-chess-knight"></i></div>
+                <h3>Dark Souls 2D</h3>
+                <p>Браузерная игра</p>
+            </div>
+            <div class="portfolio-item glass-panel">
+                <div class="portfolio-img p3"><i class="fas fa-city"></i></div>
+                <h3>Real Estate</h3>
+                <p>Сайт недвижимости</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- БАННЕР CTA -->
+    <section class="cta-banner">
+        <h2>Есть идея для проекта?</h2>
+        <p>Не откладывайте на завтра. Давайте обсудим реализацию уже сегодня.</p>
+    </section>
+
+    <!-- НОВАЯ СЕКЦИЯ: ЦЕНЫ (ТАРИФЫ) -->
+    <section id="pricing" class="section">
+        <h2 class="section-title">Стоимость Услуг</h2>
+        <div class="container">
+            <!-- Тариф 1 -->
+            <div class="pricing-card glass-panel">
+                <h3>Start</h3>
+                <div class="price">$50</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Одностраничный сайт</li>
+                    <li><i class="fas fa-check"></i> Адаптив под телефон</li>
+                    <li><i class="fas fa-check"></i> 3 дня разработки</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Админ-панель</li>
+                </ul>
+                <a href="#contacts" class="btn btn-outline">Выбрать</a>
+            </div>
+            <!-- Тариф 2 (Популярный) -->
+            <div class="pricing-card glass-panel popular">
+                <div class="label">ХИТ</div>
+                <h3>Business</h3>
+                <div class="price">$150</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Многостраничный сайт</li>
+                    <li><i class="fas fa-check"></i> Анимации и эффекты</li>
+                    <li><i class="fas fa-check"></i> Настройка SEO</li>
+                    <li><i class="fas fa-check"></i> 7 дней разработки</li>
+                </ul>
+                <a href="#contacts" class="btn btn-primary">Заказать</a>
+            </div>
+            <!-- Тариф 3 -->
+            <div class="pricing-card glass-panel">
+                <h3>Premium</h3>
+                <div class="price">$300+</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Интернет-магазин / Игра</li>
+                    <li><i class="fas fa-check"></i> Уникальный дизайн</li>
+                    <li><i class="fas fa-check"></i> Поддержка 1 месяц</li>
+                    <li><i class="fas fa-check"></i> Сложный функционал</li>
+                </ul>
+                <a href="#contacts" class="btn btn-outline">Обсудить</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- НОВАЯ СЕКЦИЯ: ОТЗЫВЫ -->
+    <section id="reviews" class="section">
+        <h2 class="section-title">Отзывы Клиентов</h2>
+        <div class="container">
+            <div class="review-card glass-panel">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Заказывал лендинг. Сделали очень быстро и красиво. Анимации просто огонь!"</p>
+                <div class="author">- Алексей, Telegram</div>
+            </div>
+            <div class="review-card glass-panel">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Нужна была простая игра для конкурса. Разработчик справился на 100%. Рекомендую."</p>
+                <div class="author">- Мария, Instagram</div>
+            </div>
+            <div class="review-card glass-panel">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Профессиональный подход. Всегда на связи, правки вносились оперативно."</p>
+                <div class="author">- Дмитрий, WhatsApp</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <h2 class="section-title">Вопросы и Ответы</h2>
+        <div class="faq-container glass-panel">
+            <div class="faq-item">
+                <div class="faq-question">Нужна ли предоплата? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Да, работа начинается после предоплаты 30-50%.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Делаете ли вы правки? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Мелкие правки в процессе работы — бесплатно. Изменение ТЗ оплачивается отдельно.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ С APP-ИКОНКАМИ -->
+    <section id="contacts" class="section">
+        <div class="contact-box glass-panel">
+            <h2>Свяжитесь со мной</h2>
+            <p>Выберите удобное приложение для связи:</p>
+            
+            <div class="app-icons-container">
+                <!-- Telegram -->
+                <a href="https://t.me/FastWebUZ" target="_blank" class="app-icon telegram">
+                    <div class="icon-inner"><i class="fab fa-telegram-plane"></i></div>
+                    <span>Telegram</span>
+                </a>
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/+998918358716" target="_blank" class="app-icon whatsapp">
+                    <div class="icon-inner"><i class="fab fa-whatsapp"></i></div>
+                    <span>WhatsApp</span>
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://instagram.com/website_webgameuz" target="_blank" class="app-icon instagram">
+                    <div class="icon-inner"><i class="fab fa-instagram"></i></div>
+                    <span>Instagram</span>
+                </a>
+
+                <!-- GitHub (или другое) -->
+                <a href="#" target="_blank" class="app-icon github">
+                    <div class="icon-inner"><i class="fab fa-github"></i></div>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 WebSite-UZ Development</p>
+        <button id="privacy-trigger">Политика конфиденциальности</button>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>Конфиденциальность</h2>
+            <div class="modal-body">
+                <p>Мы гарантируем полную анонимность ваших заказов и защиту передаваемых данных.</p>
+                <p>Сайт использует cookie для улучшения рабты инотерфейса.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
